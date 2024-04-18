@@ -1,14 +1,14 @@
 import { Router } from "express";
 
 import authRouter from "./auth.js";
-import carsRouter from "./cars.js";
+import personnagesRouter from "./personnages.js";
 import fileRouter from "./file.js";
 
 const router = Router();
 
 router.use("/auth", authRouter);
 
-router.use("/cars", carsRouter);
+router.use("/personnages", personnagesRouter);
 
 router.use("/uploads", fileRouter);
 

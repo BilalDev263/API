@@ -1,12 +1,8 @@
-GET http://localhost:3001
+GET http://localhost:3000
 
 ###
 
-GET http://localhost:3001/health
-
-###
-
-GET http://localhost:3001/cars
+GET http://localhost:3000/personnages
 
 ###
 
@@ -16,31 +12,39 @@ GET http://localhost:3000/error
 
 ###
 
-GET http://localhost:3001/cars/4
+GET http://localhost:3000/personnages/66150db3805e22e53f4ebc12
 
 ### 
 
-POST http://localhost:3000/cars
+POST http://localhost:3000/personnages
 Content-Type: application/json
 
 {
-    "brand": "F",
-    "model": "K"
+  "name": "Vegeta",
+  "race": "Saiyan",
+  "powerLevel": 9000,
+  "transformations": ["Super Saiyan", "Super Saiyan 2", "Super Saiyan 3", "Super Saiyan God", "Ultra Instinct"],
+  "friends": ["Krillin", "Piccolo", "Gohan", "Tien", "Yamcha", "Chiaotzu", "Bulma"],
+  "enemies": ["Frieza", "Cell", "Majin Buu"]
 }
 
 ### 
 
-PUT http://localhost:3001/cars/4
+PUT http://localhost:3000/personnages/1
 Content-Type: application/json
 
 {
-    "brand": "Mercedes-Benz",
-    "model": "AMG GT 63 S"
+  "name": "test",
+  "race": "test",
+  "powerLevel": 500,
+  "transformations": ["Super Saiyan", "Super Saiyan 2", "Super Saiyan 3", "Super Saiyan God", "Ultra Instinct"],
+  "friends": ["Krillin", "Piccolo", "Gohan", "Tien", "Yamcha", "Chiaotzu", "Bulma"],
+  "enemies": ["Frieza", "Cell", "Majin Buu"]
 }
 
 ###
 
-DELETE http://localhost:3001/cars/2
+DELETE http://localhost:3000/personnages/66150db3805e22e53f4ebc12
 
 
 ### 
